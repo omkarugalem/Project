@@ -21,14 +21,16 @@ const FetchData = () => {
     let asc = state.sort((a, b) => {
       return a.id - b.id;
     });
-    setAsc(asc);
+    let update = [...asc];
+    setAsc(update);
   };
   let sortDescending = e => {
     e.preventDefault();
     let des = state.sort((a, b) => {
       return b.id - a.id;
     });
-    setDes(des);
+    let updateData = [...des];
+    setDes(updateData);
   };
   let displayData = state
     .filter(val => {
@@ -49,9 +51,6 @@ const FetchData = () => {
     <section id="mainBlock">
       <article>
         <div className="display">
-          <button onClick={sortAscending} className="ascBtn">
-            Ascending
-          </button>
           <div>
             <input
               type="text"
@@ -64,7 +63,9 @@ const FetchData = () => {
             />
           </div>
           <div>
-           
+            <button onClick={sortAscending} className="ascBtn">
+              Ascending
+            </button>
             <button onClick={sortDescending} className="dscBtn">
               Descending
             </button>
