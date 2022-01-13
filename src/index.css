@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#mainBlock {
+  width: 100%;
+  height: auto;
+}
+#mainBlock article {
+  width: 80%;
+  margin: 0 auto;
+}
+.display {
+  display: flex;
+}
+.inputField {
+  width: 500px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: none;
+  border: 1px solid black;
+  margin-top: 15px;
+  padding: 15px;
+  color: black;
+}
+.ascBtn {
+  width: 75px;
+  height: 34px;
+  border-radius: 5px;
+  margin-top: 12px;
+  margin-right: 10px;
+  background-color: rgb(76, 187, 76);
+  font-weight: bold;
+  border: none;
+}
+.dscBtn {
+  width: 82px;
+  height: 34px;
+  border-radius: 5px;
+  margin-top: 12px;
+  margin-left: 10px;
+ background-color: rgb(76, 187, 76);
+   font-weight: bold;
+   border: none;
+}
